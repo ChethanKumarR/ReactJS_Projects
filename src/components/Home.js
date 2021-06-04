@@ -68,6 +68,7 @@ class Home extends Component {
     console.log(userInput ,"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<USERINPUT>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     const output = this.state.news.filter((data) => {
       return data.title.toLowerCase().indexOf(userInput.toLowerCase()) > -1
+      // return data.feed.toLowerCase().indexOf(userInput.toLowerCase()) > -1
     })
     this.setState({ filtered: output })
   }

@@ -70,7 +70,7 @@ class Header extends Component {
             keyword: "User Input Here"
         }
     }
-    a = "CHETHAN"; //we cannot update the value of variable if we are not defining the variable inside the state
+   // a = "CHETHAN"; //we cannot update the value of variable if we are not defining the variable inside the state
 
     handleChange = (event) => {
        // console.log(event)
