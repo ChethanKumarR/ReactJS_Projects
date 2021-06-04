@@ -1,0 +1,53 @@
+import React from "react";        //Default Export
+//import React, { Fragment } from "react";
+import ReactDOM from "react-dom"; //Default Export
+import Header from "./Header";    //Default Export
+//import { Header } from "./Header"; //Normal Export
+import Footer from "./components/Footer"
+
+
+//Creating a  functional component App
+// const App = () => {
+//   return (
+//     <h1>Hi To React</h1>
+//   )
+// }
+
+// const App = () => {
+//   return (
+//      <h1>Hi To React</h1>
+//      <h2>Welcome To React</h2>  // Adjacent JSX Elements must be wrapped in an enclosing tag , Use <div> or JSX fragment <>...</>
+//   )
+// }
+
+
+
+//Using <div>...</div> Adjacent JSX Elements must be wrapped in an enclosing tag
+//component name must be start with capital letter ex: <Header>
+const App = () => {
+  return (
+    // <div>
+    //   <Header />
+    //   <h1>Hi To React</h1>
+    //   <h2>Welcome to React</h2>
+    //   <Footer/>
+    // </div>
+
+    //Doing optimization
+    <React.Fragment>
+      <Header />
+      <h1>Hi To React</h1>
+      <h2>Welcome to React</h2>
+      <Footer />
+    </React.Fragment>
+
+    // <Fragment>
+    //   <Header />
+    //   <h1>Hi To React</h1>
+    //   <h2>Welcome to React</h2>
+    //   <Footer />
+    // </Fragment>
+  )
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
